@@ -1,0 +1,31 @@
+class Experiment:
+    def __init__(self):
+        self.MODELDIR = 'resource/exps/' + 'exploreIntensifiesAuto' + '/' + 'model/'
+        self.HIDDEN = 64
+        self.TEST = False
+        self.LOAD = False
+        self.BEST = False
+        self.NPOP = 5
+        self.EPS_CUR = 1
+        self.EPS_MIN = 0.
+        self.EPS_STEP = 0.999975
+        self.EXPLORE_MODE = 'eps'
+        self.PUNISHMENT = 1
+        self.ENT_DIM = 1014
+        self.NOISE = True
+        self.LM_FUNCTION = 'sum'  # 'sum', 'min', 'max'
+        self.BATCH_SIZE = 2**6
+        self.BATCH_SIZE_LM = 2**5
+        self.TARGET_PERIOD = 2**11
+        self.BUFFER_SIZE = 2**17
+        self.MIN_BUFFER = 2**13
+        self.GAMMA = 0.99
+        self.N_QUANT = 200
+        self.N_QUANT_LM = 1  # 1 or self.N_QUANT
+        self.REPLAY_PRIO = True
+        self.REPLAY_NSTEP = 5
+        self.VAL_FEATURE = True
+        self.device = 'cpu'  # 'cpu' or 'cuda'
+        self.COMMON = False
+        self.COMMON_FUN = 'sum'
+        self.HORIZON = 1000

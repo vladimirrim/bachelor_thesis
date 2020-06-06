@@ -1,0 +1,7 @@
+The four folders correspond to a specific RL algorithm (DQN or PPO) in a specific environment (Harvest or Eldorado).
+
+File scripts/setup/requirements.txt lists necessary packages.
+
+To run the code, change directory to one of the four folders and input 'python3 Forge.py --nRealm 2 --lm', where nRealm is the number of cores dedicated to workers that interact with environments. Change hyperparameters in configs.py.
+
+Logs are saved as 'resource/exps/exploreIntensifiesAuto/model/logs.p'. To plot the logs, run figures.py. The figures will be saved in 'resource/exps/exploreIntensifiesAuto/train/'.
